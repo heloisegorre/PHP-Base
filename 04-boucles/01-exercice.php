@@ -56,3 +56,58 @@ while ($reste !== 0) {
         echo $pgcd;
     }
 }
+
+echo "<br/>";
+echo "<h1>4. Coder le jeu du FizzBuzz</h1>";
+for ($i = 0; $i <= 100; $i++) {
+    if ($i % 3 == 0) {
+        echo 'Fizz, ';
+    }else if ($i % 5 == 0) {
+        echo 'Buzz, ';
+    }else if ($i % 15 == 0) {
+        echo 'FizzBuzz, ';
+    }else {
+        echo $i . ', ';
+    }
+}
+
+echo "<br/>";
+echo "<h1>5. Bières</h1>";
+for ($i = 0; $i < 10; $i++) {
+    for ($j = 0; $j < 10; $j++) {
+        echo '🍺';
+    }
+    echo "<br/>";
+}
+
+echo "<h1>5.2 Doggos</h1>";
+for ($i = 0; $i <10; $i++) { //Affiche chaque ligne
+    for ($j = 0; $j < $i; $j++) { //Affiche chaque colonne
+        echo '🐶';
+    }
+    echo '<br/>';
+}
+
+echo "<h1>5.3 Triangle équilatéral</h1>";
+//★☆
+
+$start = 5;
+$size = 1; // Le nombre d'étoiles pleines à afficher
+
+
+for ($y = 0; $y < 6 ; $y++) {
+    for ($x = 0 ; $x < 11 ; $x++) {
+        if ($x == $start) { //On met une étoile pleine à une position spécifique
+            for ($e = 0; $e < $size; $e++) {
+                echo '★'; 
+            }
+            $x += $size - 1; //Pour éviter que les étoiles débordent du cadre
+        }else {
+            echo "☆";
+        }
+    }
+    $start--; // On décrémente la variable à la fin de chaque ligne d'étoiles
+    $size+=2; //On augmente le nombre d'étoiles à afficher entre chaque ligne
+    echo '<br/>';
+}
+
