@@ -111,3 +111,29 @@ for ($y = 0; $y < 6 ; $y++) {
     echo '<br/>';
 }
 
+
+echo "<h1>6. Table de multiplication</h1>";
+/*
+for ($n = 0; $n < 11; $n++) {
+    for ($m = 0; $m < 11; $m++) {
+            echo $n * $m . ' ';     
+    }
+    echo '<br/>';
+}
+*/
+echo '<table border="1" style="border-collapse: collapse">';
+echo '<thead><tr>';
+echo '<th align="center" style="width: 30px; height: 30px">x</th>';
+for ($head = 0; $head < 11; $head++) {
+    echo '<th align="center" style="width: 30px; height: 30px">' . $head . '</th>';
+}
+echo '</tr></thead>';
+for ($ligne = 0; $ligne < 11; $ligne++) {
+    echo '<tr>';
+        echo '<td align="center" style="width: 30px; height: 30px"><strong>' .$ligne . '</strong></td>';
+        for ($colonne = 0; $colonne < 11 ; $colonne++) {
+            echo '<td align="center" style="width: 30px; height: 30px">' . $ligne * $colonne . '</td>';
+        }
+        echo '</tr>';
+}
+echo '</table>';
