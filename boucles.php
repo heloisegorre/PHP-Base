@@ -10,6 +10,6 @@ echo '<br>';
 for ($i = 0; $i <= 100; $i++) {
     echo $i . '<br>';
 }
-if ($i / 3 = true) {
+if () {
     echo 'Fizz';
 }
