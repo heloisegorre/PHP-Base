@@ -31,11 +31,24 @@ var_dump($people);
 // Stocker des contacts dans ce tableau avec les index nom (string), prénom (string), age (int), téléphone (array => portable (string) et fixe (string)). 
 // Il peut y avoir plusieurs contacts.
 $people = [
-    'nom' => 'Spleenger';
-    'prenom' => 'John';
-    'age' => '24';
-    'telephone' [
-        'portable' => 06.00.00.00.00
-        'fixe' => 03.00.00.00.00
+    [
+        'nom'        => 'Spleenger',
+        'prenom'     => 'John',
+        'age'        => 24,
+        'telephones' => [
+            'portable' => '06.00.00.00.00',
+            'fix'      => '(+33) 03 21 00 00 00'
+        ],
+    ],
+    [
+        'nom'        => 'Toto',
+        'prenom'     => 'Jean',
+        'age'        => 36,
+        'telephones' => [
+            'portable' => '07.00.00.00.00',
+            'fix'      => '(+33) 03 20 00 00 00'
+        ]
     ]
 ];
+
+var_dump($people);
