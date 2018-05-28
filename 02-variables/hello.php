@@ -1,4 +1,6 @@
 <?php
-$firstname = 'Matthieu';
+$firstname = 'Holly';
 
-echo '<h1>Bonjour ' . $firstname . '</h1>';
+echo '<h1>Hello ' . $firstname . '</h1>';
+
+// en interpolant:   echo "<h1> Hello $firstname </h1>";
